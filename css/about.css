@@ -17,7 +17,8 @@
   padding-top: 1.5rem;
   font-size: 2rem;
   color: var(--accent-light);
-  letter-spacing: 1px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .about-section .about{

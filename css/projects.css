@@ -13,10 +13,11 @@
 }
 .projects-section h2{
   text-align: center;
-  padding: 1.5rem 0rem;
+  padding: 3rem 0rem;
   font-size: 2rem;
   color: var(--accent-light);
-  letter-spacing: 1px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .projects-section .project-content-box{
