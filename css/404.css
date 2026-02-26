@@ -1,0 +1,91 @@
+:root{
+    --accent:#00ADB5;
+    --accent-light:#e4e3ec;
+    --dark:#191927;
+    --mid-dark:#222831;
+    --light-dark:#223241;
+    --crimson:#dc143c;
+}
+
+
+
+
+/* ---------------- RESET ---------------- */
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+      font-family: system-ui, sans-serif;
+      background-color: var(--mid-dark);
+      color: var(--accent-light);
+      min-height: 100vh;
+}
+
+/*-------------------- Section -------------------*/
+section {
+      width: 100%;
+      height: auto;
+}
+
+/* ---------------- CONTAINER ---------------- */
+.container {
+      min-height: 100vh;
+      max-width: 1280px;
+      padding: 1rem 3%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns:1fr 1fr;
+      align-items: center;
+      width: 100%;
+}
+
+.svg-box{
+    padding: 0 10%;
+}
+
+.svg-box img{
+    max-width: 100%;
+}
+
+.content-box{
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.content-box button{
+    width: 160px;
+    height: 40px;
+    background: none;
+    border: 1px solid var(--accent-light);
+    border-radius: 6px;
+    color: var(--accent-light);
+    margin-top: 5rem;
+    transition: 0.5s;
+}
+
+.content-box button:hover{
+    background: var(--accent-light);
+    color: var(--dark);
+}
+
+
+ /* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 768px) {
+    .container{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:425px) {
+    .svg-box{
+        padding:0 5% ;
+    }
+}

@@ -1,0 +1,155 @@
+:root{
+    --accent:#00ADB5;
+    --accent-light:#e4e3ec;
+    --dark:#191927;
+    --mid-dark:#222831;
+    --light-dark:#223241;
+    --crimson:#dc143c;
+}
+
+
+
+
+/* ---------------- RESET ---------------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, sans-serif;
+      background-color:var(--mid-dark);
+      color: var(--accent-light);
+    }
+
+    /* ---------------- CONTAINER ---------------- */
+    .container {
+      max-width: 1280px;
+      padding: 1rem 3%;
+      margin: 0 auto;
+    }
+
+    /*-------------------- Section -------------------*/
+     section {
+      width: 100%;
+      height: auto;
+    }
+
+    /* ---------------- HERO SECTION ---------------- */
+
+    .hero-section {
+      background: var(--mid-dark);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: auto 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+      width: 100%;
+    }
+
+    /* Vertical Text */
+    .vertical-text {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-size: 0.75rem;
+      letter-spacing: 10px;
+      color: #94a3b8;
+    }
+
+    /* Content */
+    .content{
+       display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+
+    .content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .content p {
+      max-width: 520px;
+      line-height: 1.7;
+      color: var(--accent-light);
+    }
+
+    .buttons {
+      margin-top: 2rem;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .btn {
+      padding: 0.75rem 1.6rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: var(--dark);
+    }
+
+    .btn-secondary {
+      border: 1px solid var(--accent);
+      color: var(--accent);
+    }
+
+    /* SVG / Image Area */
+    .visual {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .visual img{
+      max-width: 600px;
+    }
+
+
+    /* Social Icons */
+    .social-icons {
+      width: 100%;
+      padding: 2rem 0;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .social-icons a {
+      text-decoration: none;
+      font-size: 0.85rem;
+      color: var(--accent-light);
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------------- RESPONSIVE ---------------- */
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .vertical-text {
+        display: none;
+      }
+
+      .buttons {
+        justify-content: center;
+      }
+    }
+
