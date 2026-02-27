@@ -51,6 +51,14 @@
    align-items: center;
 }
 
+.contact-details .con-svg{
+    padding: 1rem;
+}
+
+.contact-details .con-svg img{
+    width: 100%;
+}
+
 /*------------Contact Form-------------*/
 .contact-details-box .contact-details form{
     display: flex;
@@ -87,6 +95,7 @@
     border: none;
     border-radius: 50px;
     width: 9.5rem;
+    align-self: center;
 }
 
 
@@ -98,5 +107,17 @@
 @media (max-width: 900px){
     .contact-details-box{
        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 425px){
+
+    .contact-details-box .contact-details .con-detail{
+        width: 95%;
+    }
+
+    .contact-details-box .contact-details form{
+        width: 100%;
+        padding: 0.5rem;
     }
 }
