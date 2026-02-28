@@ -75,6 +75,10 @@
   .about-section .about{
     grid-template-columns: 1fr;
   }
+  .about-section .about.designer-section{
+     display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 @media (max-width:425px){
